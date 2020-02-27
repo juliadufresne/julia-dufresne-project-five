@@ -10,16 +10,16 @@ class Entries extends Component {
 
     render() {
         return (
-            <ul>
+            <div>
                 {this.props.data.map((entry) => {
                     return (
-                        <li key={entry.key}>
+                        <div key={entry.key}>
                             <p>{entry.name}</p>
-                            <button onClick={() => { this.removeToy(entry.key) }}>Remove Toy</button>
-                        </li>
+                            <button onClick={() => { this.removeToy(entry.key) }}>Remove Entry</button>
+                        </div>
                     )
                 })}
-            </ul>
+            </div>
         )
     }
 }

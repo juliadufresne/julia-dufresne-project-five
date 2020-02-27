@@ -44,12 +44,16 @@ class UserInput extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        const dbRef = firebase.database().ref();
-        dbRef.push(this.state.input);
-        this.setState({
-            entry: this.state.input,
-            input: "",
-        })
+        if (this.state.input !== ""){
+            const dbRef = firebase.database().ref();
+            dbRef.push(this.state.input);
+            this.setState({
+                entry: this.state.input,
+                input: "",
+            })
+        }  else {
+            alert("You can't submit an empty journal entry!") 
+        }
     }
 
     render() {
