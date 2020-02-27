@@ -37,23 +37,3 @@
   }
 }
 
-h1 {
-  font-family: 'Playfair Display';
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  width: 20%;
-  margin: 0 auto;
-}
-
-button {
-  padding: 5px 0px;
-  width: 100px;
-  margin: 0 auto;
-}
-
-textarea {
-  margin: 20px 0px;
-}
