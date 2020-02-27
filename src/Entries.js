@@ -1,18 +1,25 @@
 import React, { Component } from 'react';
+import firebase from 'firebase';
 
 class Entries extends Component {
-    // constructor(){
-    //     super()
+    removeToy = (entry) => {
+        const dbRef = firebase.database().ref();
 
-    //     this.state = {
+        dbRef.child(entry).remove();
+    }
 
-    //     }
-    // }
-
-    render(){
-        return(
+    render() {
+        return (
             <ul>
-                <li>Your entry is: {this.props.entry}</li>
+                {/* <li>Your entry is: {this.props.entry}</li> */}
+                {this.props.data.map((entry) => {
+                    return (
+                        <li key={entry.key}>
+                            <p>{entry.name}</p>
+                            <button onClick={() => { this.removeToy(entry.key) }}>Remove Toy</button>
+                        </li>
+                    )
+                })}
             </ul>
         )
     }

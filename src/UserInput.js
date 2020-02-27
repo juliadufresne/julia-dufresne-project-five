@@ -13,6 +13,28 @@ class UserInput extends Component {
         }
     }
 
+    componentDidMount() {
+        const dbRef = firebase.database().ref();
+
+        dbRef.on('value', (response) => {
+            const dataFromDb = response.val();
+
+            const stateToBeSet = [];
+
+            for (let key in dataFromDb) {
+                const journalEntries = {
+                    key: key,
+                    name: dataFromDb[key],
+                }
+                stateToBeSet.push(journalEntries);
+            }
+
+            this.setState({
+                data: stateToBeSet,
+            })
+        })
+    }
+
     handleChange = (event) => {
         console.log("Catching the text input")
         this.setState({
@@ -22,11 +44,8 @@ class UserInput extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-
         const dbRef = firebase.database().ref();
-
         dbRef.push(this.state.input);
-
         this.setState({
             entry: this.state.input,
             input: "",
@@ -49,6 +68,7 @@ class UserInput extends Component {
                 </form>
                 <Entries
                     entry={this.state.entry}
+                    data={this.state.data}
                 />
             </div>
         )
