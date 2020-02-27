@@ -11,7 +11,6 @@ class Entries extends Component {
     render() {
         return (
             <ul>
-                {/* <li>Your entry is: {this.props.entry}</li> */}
                 {this.props.data.map((entry) => {
                     return (
                         <li key={entry.key}>
