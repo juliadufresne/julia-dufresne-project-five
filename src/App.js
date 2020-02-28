@@ -78,6 +78,7 @@ class App extends Component {
         <header>
           <h1>Deeper</h1>
           <h2>{prompts[this.state.number].quote}</h2>
+          <p>{prompts[this.state.number].author}</p>
           <button onClick={this.handleStart}>Get a quote!</button>
           <form onSubmit={this.handleSubmit} action="">
             <textarea
