@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import prompts from './prompts.js'
 import firebase from 'firebase';
 
 class Entries extends Component {
-    constructor(){
+    constructor() {
         super()
 
         this.state = {
@@ -25,11 +24,11 @@ class Entries extends Component {
                 {this.props.data.map((entry) => {
                     console.log(entry)
                     return (
-                        <div key={entry.key}>
-                            <h2>{entry.name.quote}</h2>
-                            <p>{entry.name.input}</p>
-                            <button onClick={() => { this.removeToy(entry.key) }}>Remove Entry</button>
-                        </div>
+                        <ul key={entry.key} className="userPost">
+                            <li><h3>{entry.name.quote}</h3></li>
+                            <li><p>{entry.name.input}</p></li>
+                            <li><button onClick={() => { this.removeToy(entry.key) }}>Remove Entry</button></li>
+                        </ul>
                     )
                 })}
             </div>

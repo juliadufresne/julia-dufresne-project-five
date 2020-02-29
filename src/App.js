@@ -105,20 +105,19 @@ class App extends Component {
                   value={this.state.input}
                   onChange={this.handleChange}
                 ></textarea>
-                <button className="post">Post</button>
+                <button className="postButton">Post</button>
               </form>
             </div>
           </div>
         </header>
-        <div>
-          <p></p>
-          <Entries
-            enteredInput={this.state.enteredInput}
-            data={this.state.data}
-            currentQuote={this.state.currentQuote}
-          />
+          <ul className="posts wrapper">
+            <Entries
+              enteredInput={this.state.enteredInput}
+              data={this.state.data}
+              currentQuote={this.state.currentQuote}
+            />
+          </ul>
         </div>
-      </div>
     );
   }
 }
