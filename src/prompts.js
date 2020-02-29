@@ -124,7 +124,7 @@ const prompts = [
         author: "Marcus Aurelius"
     },
     {
-        quote: "First tell yourself what kind of perosn you want to be, then do what you have to do.",
+        quote: "First tell yourself what kind of person you want to be, then do what you have to do.",
         author: "Marcus Aurelius"
     },
     {
@@ -153,7 +153,7 @@ const prompts = [
     },
     {
         quote: "Much more harmful are the consequences of anger and grief than the circumstances that aroused them in us!",
-        author: "- Marcus Aurelius"
+        author: "Marcus Aurelius"
     },
     {
         quote: "The reason why we have two ears and only one mouth is so we might listen more and talk less.",

@@ -58,43 +58,38 @@ button {
 /* CUSTOM STYLING */
 
 /* HEADER */
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
 header {
   height: 100vh;
-  background-image: url('./assets/annie-spratt-0ZPSX_mQ3xI-unsplash.jpg');
+  background-image: url('./assets/29120137_annie-spratt-0ZPSX_mQ3xI-unsplash.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
 }
 
 h1 {
   font-family: 'Playfair Display';
-  padding-left: 20px;
-  font-size: calc(80px + (220 - 80) * ((100vw - 320px) / (1400 - 320)));
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  font-size: calc(80px + (150 - 80) * ((100vw - 320px) / (1400 - 320)));
   color: rgba(27, 27, 27, 0.815);
+  text-align: left;
 }
 
-.journalEntry {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
 
 .journalEntry h2 {
-  font-size: calc(20px + (40 - 20) * ((100vw - 320px) / (1400 - 320)));
+  font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1400 - 320)));
   font-family: 'Spartan';
-  text-align: right;
-  padding: 50px 30px 0px 30px;
+  text-align: left;
 }
 
 .journalEntry p {
   font-size: calc(12px + (30 - 12) * ((100vw - 320px) / (1400 - 320)));
   font-family: 'Spartan';
-  text-align: right;
-  padding: 10px 30px;
+  text-align: left;
+  padding: 10px 0px;
 }
 
 .journalEntry h3 {
@@ -102,31 +97,30 @@ h1 {
   margin: 0 auto;
   font-family: 'Spartan';
   padding-top: 20px;
-  font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1400 - 320)));
+  padding-bottom: 20px;
+  font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1400 - 320)));
 }
 
 .generatedQuote {
-  height: 28vh;
+  height: 15vh;
+  padding-top: 20px;
 }
 
 form {
   font-family: 'Spartan';
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  align-items: flex-end;
+  position: relative;
 }
 
 textarea {
   font-family: 'Spartan';
-  margin: 20px 0px;
   resize: none;
   border: 2px solid orange;
   border-radius: 3px;
-  width: 75vw;
-  height: 26vh;
-  padding: 10px 20px;
+  width: calc(100% - 120px);
+  margin: 0 auto;
+  height: 20vh;
   background-color: rgba(255, 255, 255, 0.842);
+  padding: 20px 100px 20px 20px;
 }
 
 button {
@@ -147,8 +141,13 @@ button:hover {
 }
 
 .post {
+  width: 80px;
   text-align: center;
-  width: 100px;
+  position: absolute;
+  top: 0;
+  right: -5px;
+  height: 100%;
+  border-radius: 3px;
 }
 
 .prompt {

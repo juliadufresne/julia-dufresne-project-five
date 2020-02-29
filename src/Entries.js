@@ -3,21 +3,31 @@ import prompts from './prompts.js'
 import firebase from 'firebase';
 
 class Entries extends Component {
+    constructor(){
+        super()
+
+        this.state = {
+            posts: []
+        }
+    }
+
+
     removeToy = (entry) => {
         const dbRef = firebase.database().ref();
-
         dbRef.child(entry).remove();
     }
+
+
 
     render() {
         return (
             <div>
                 {this.props.data.map((entry) => {
+                    console.log(entry)
                     return (
                         <div key={entry.key}>
-                            {/* <h2 class="quote">{prompts[this.props.number].quote}</h2>
-                            <p class="author">- {prompts[this.props.number].author}</p> */}
-                            <p>{entry.name}</p>
+                            <h2>{entry.name.quote}</h2>
+                            <p>{entry.name.input}</p>
                             <button onClick={() => { this.removeToy(entry.key) }}>Remove Entry</button>
                         </div>
                     )
