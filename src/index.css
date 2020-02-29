@@ -68,34 +68,89 @@ header {
 
 h1 {
   font-family: 'Playfair Display';
-  font-size: calc(50px + (250 - 50) * ((100vw - 320px) / (1400 - 320)));
+  padding-left: 20px;
+  font-size: calc(80px + (220 - 80) * ((100vw - 320px) / (1400 - 320)));
   position: absolute;
   left: 0;
   bottom: 0;
   color: rgba(27, 27, 27, 0.815);
 }
 
-form {
+.journalEntry {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  width: 20%;
+  align-items: flex-end;
+}
+
+.journalEntry h2 {
+  font-size: calc(20px + (40 - 20) * ((100vw - 320px) / (1400 - 320)));
+  font-family: 'Spartan';
+  text-align: right;
+  padding: 50px 30px 0px 30px;
+}
+
+.journalEntry p {
+  font-size: calc(12px + (30 - 12) * ((100vw - 320px) / (1400 - 320)));
+  font-family: 'Spartan';
+  text-align: right;
+  padding: 10px 30px;
+}
+
+.journalEntry h3 {
+  text-align: center;
   margin: 0 auto;
+  font-family: 'Spartan';
+  padding-top: 20px;
+  font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1400 - 320)));
+}
+
+.generatedQuote {
+  height: 28vh;
+}
+
+form {
+  font-family: 'Spartan';
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: flex-end;
 }
 
 textarea {
+  font-family: 'Spartan';
   margin: 20px 0px;
   resize: none;
-  border: 1px solid orange;
+  border: 2px solid orange;
   border-radius: 3px;
+  width: 75vw;
+  height: 26vh;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.842);
 }
 
 button {
-  padding: 5px 0px;
-  width: 100px;
-  margin: 0 auto;
-  background-color: white;
+  font-family: 'Spartan';
+  font-size: 20px;
+  padding: 10px 10px;
+  background-color: transparent;
+  border: 2px solid orange;
+  color: orange;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.842);;
+  border-radius: 5px;
 }
 
+button:hover {
+  background-color: orange;
+  color: rgba(255, 255, 255, 0.842);;
+}
 
+.post {
+  text-align: center;
+  width: 100px;
+}
 
-
+.prompt {
+  margin: 0 auto;
+}

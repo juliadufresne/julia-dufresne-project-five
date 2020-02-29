@@ -67,7 +67,7 @@ class App extends Component {
         input: "",
       })
     } else {
-      alert("You can't submit an empty journal input  !")
+      alert("You can't submit an empty journal input!")
     }
   }
 
@@ -77,20 +77,25 @@ class App extends Component {
       <div className="App">
         <header>
           <h1>Deeper</h1>
-          <h2>{prompts[this.state.number].quote}</h2>
-          <p>{prompts[this.state.number].author}</p>
-          <button onClick={this.handleStart}>Get a quote!</button>
-          <form onSubmit={this.handleSubmit} action="">
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              value={this.state.input}
-              onChange={this.handleChange}
-            ></textarea>
-            <button onClick={this.handleSubmit}>Post!</button>
-          </form>
+          <div class="journalEntry">
+            <div class="generatedQuote">
+              <h2 class="quote">{prompts[this.state.number].quote}</h2>
+              <p class="author">- {prompts[this.state.number].author}</p>
+            </div>
+            <button onClick={this.handleStart} class="prompt">Generate a quote</button>
+            <h3>When you read this quote, what do you think about?</h3>
+            <form onSubmit={this.handleSubmit} action="">
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="8"
+                value={this.state.input}
+                onChange={this.handleChange}
+              ></textarea>
+              <button onClick={this.handleSubmit} class="post">Post</button>
+            </form>
+          </div>
         </header>
         <Entries
           enteredInput={this.state.enteredInput}
