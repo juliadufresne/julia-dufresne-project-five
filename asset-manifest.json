@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/julia-dufresne-project-five/static/css/main.daa2e665.chunk.css",
-    "main.js": "/julia-dufresne-project-five/static/js/main.532a9539.chunk.js",
-    "main.js.map": "/julia-dufresne-project-five/static/js/main.532a9539.chunk.js.map",
+    "main.css": "/julia-dufresne-project-five/static/css/main.678e186b.chunk.css",
+    "main.js": "/julia-dufresne-project-five/static/js/main.67456108.chunk.js",
+    "main.js.map": "/julia-dufresne-project-five/static/js/main.67456108.chunk.js.map",
     "runtime-main.js": "/julia-dufresne-project-five/static/js/runtime-main.5b1b38f3.js",
     "runtime-main.js.map": "/julia-dufresne-project-five/static/js/runtime-main.5b1b38f3.js.map",
-    "static/js/2.a61ff4c9.chunk.js": "/julia-dufresne-project-five/static/js/2.a61ff4c9.chunk.js",
-    "static/js/2.a61ff4c9.chunk.js.map": "/julia-dufresne-project-five/static/js/2.a61ff4c9.chunk.js.map",
+    "static/js/2.c2e8edfa.chunk.js": "/julia-dufresne-project-five/static/js/2.c2e8edfa.chunk.js",
+    "static/js/2.c2e8edfa.chunk.js.map": "/julia-dufresne-project-five/static/js/2.c2e8edfa.chunk.js.map",
     "index.html": "/julia-dufresne-project-five/index.html",
-    "precache-manifest.634fefc9505ca4396c7ae93bb0b95c3c.js": "/julia-dufresne-project-five/precache-manifest.634fefc9505ca4396c7ae93bb0b95c3c.js",
+    "precache-manifest.3ecd1ecbbc57940c4c617ff175fc6cdb.js": "/julia-dufresne-project-five/precache-manifest.3ecd1ecbbc57940c4c617ff175fc6cdb.js",
     "service-worker.js": "/julia-dufresne-project-five/service-worker.js",
-    "static/css/main.daa2e665.chunk.css.map": "/julia-dufresne-project-five/static/css/main.daa2e665.chunk.css.map",
-    "static/js/2.a61ff4c9.chunk.js.LICENSE.txt": "/julia-dufresne-project-five/static/js/2.a61ff4c9.chunk.js.LICENSE.txt"
+    "static/css/main.678e186b.chunk.css.map": "/julia-dufresne-project-five/static/css/main.678e186b.chunk.css.map",
+    "static/js/2.c2e8edfa.chunk.js.LICENSE.txt": "/julia-dufresne-project-five/static/js/2.c2e8edfa.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/julia-dufresne-project-five/static/media/annie-spratt-0ZPSX_mQ3xI-unsplash.6a6d7b9c.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.5b1b38f3.js",
-    "static/js/2.a61ff4c9.chunk.js",
-    "static/css/main.daa2e665.chunk.css",
-    "static/js/main.532a9539.chunk.js"
+    "static/js/2.c2e8edfa.chunk.js",
+    "static/css/main.678e186b.chunk.css",
+    "static/js/main.67456108.chunk.js"
   ]
 }
