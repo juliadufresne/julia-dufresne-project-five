@@ -16,6 +16,8 @@ class App extends Component {
       enteredInput: "",
       currentQuote: [],
     }
+
+    this.scrollSection = React.createRef();
   }
 
   componentDidMount() {
@@ -58,8 +60,13 @@ class App extends Component {
     });
   }
 
+  scrollToMyRef = () => {
+    window.scrollTo(0, this.scrollSection.current.offsetTop)
+  }
+
   handleSubmit = (event) => {
     console.log("Submitting user input")
+
     event.preventDefault();
 
     if (this.state.input !== "") {
@@ -77,6 +84,9 @@ class App extends Component {
         input: "",
         currentQuote: prompts[this.state.number].quote,
       })
+
+      this.scrollToMyRef()
+
     } else {
       alert("You can't submit an empty journal input!")
     }
@@ -110,7 +120,7 @@ class App extends Component {
             </div>
           </div>
         </header>
-          <ul className="posts wrapper">
+          <ul className="posts wrapper" ref={this.scrollSection}>
             <Entries
               enteredInput={this.state.enteredInput}
               data={this.state.data}

@@ -52,6 +52,9 @@ button {
     cursor: pointer;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 
 
@@ -118,7 +121,7 @@ textarea {
   border-radius: 3px;
   width: calc(100% - 120px);
   margin: 0 auto;
-  height: 20vh;
+  height: 30vh;
   background-color: rgba(255, 255, 255, 0.842);
   padding: 20px 100px 20px 20px;
 }
@@ -155,28 +158,57 @@ button:hover {
 }
 
 .posts {
-    -moz-column-count: 3;
-    -webkit-column-count: 3;
-    column-count: 3;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    padding-top: 60px;
+    /* height: 100%; */
 }
 
 .posts div {
   margin: 0 auto;
-  width: 100%;
+  width: 80%;
 }
 
 .userPost {
     -webkit-column-break-inside: avoid; 
-    page-break-inside: avoid;          
-    break-inside: avoid-column;         
+    page-break-inside: avoid;
+    break-inside: avoid-column;
     display: inline-block;
     overflow: hidden;
-    break-inside: avoid-column;
-    -webkit-column-break-inside: avoid;
-    display: flex;
-    flex-direction: column;
     border: 2px solid #52b9ca;
     width: 100%;
-    height: 400px; 
+    height: 100%; 
+    margin: 20px 0px;
+    border-radius: 5px;
 }
 
+.userPost div {
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.userPost h3 {
+  font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1400 - 320)));
+  text-align: left;
+  font-family: 'Playfair Display';
+}
+
+.userPost p {
+  padding: 30px 0;
+  text-align: left;
+  font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1400 - 320)));
+}
+
+.remove {
+  font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1400 - 320)));
+}
+
+.line {
+  padding-top: 20px;
+  border-bottom: 4px solid #52b9ca;
+  width: 80%;
+}

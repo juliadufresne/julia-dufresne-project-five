@@ -17,17 +17,19 @@ class Entries extends Component {
     }
 
 
-
     render() {
         return (
             <div>
                 {this.props.data.map((entry) => {
-                    console.log(entry)
+
                     return (
                         <ul key={entry.key} className="userPost">
-                            <li><h3>{entry.name.quote}</h3></li>
-                            <li><p>{entry.name.input}</p></li>
-                            <li><button onClick={() => { this.removeToy(entry.key) }}>Remove Entry</button></li>
+                            <div>
+                                <li><h3>“{entry.name.quote}”</h3></li>
+                                <li className="line"></li>
+                                <li><p>{entry.name.input}</p></li>
+                                <li><button className="remove" onClick={() => { this.removeToy(entry.key) }}>Remove Entry</button></li>
+                            </div>
                         </ul>
                     )
                 })}
