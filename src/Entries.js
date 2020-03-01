@@ -10,8 +10,8 @@ class Entries extends Component {
         }
     }
 
-
-    removeToy = (entry) => {
+    // Function to remove posts from Firebase
+    removePost = (entry) => {
         const dbRef = firebase.database().ref();
         dbRef.child(entry).remove();
     }
@@ -28,7 +28,7 @@ class Entries extends Component {
                                 <li><h3>“{entry.name.quote}”</h3></li>
                                 <li className="line"></li>
                                 <li><p>{entry.name.input}</p></li>
-                                <li><button className="remove" onClick={() => { this.removeToy(entry.key) }}>Remove Entry</button></li>
+                                <li><button className="remove" onClick={() => { this.removePost(entry.key) }}>Remove Entry</button></li>
                             </div>
                         </ul>
                     )
