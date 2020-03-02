@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/julia-dufresne-project-five/precache-manifest.3ecd1ecbbc57940c4c617ff175fc6cdb.js"
+  "/julia-dufresne-project-five/precache-manifest.00962e3477109532d055d7ddfddbc67f.js"
 );
 
 self.addEventListener('message', (event) => {
