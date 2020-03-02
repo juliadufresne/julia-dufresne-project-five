@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import Entries from './Entries.js';
 import prompts from './prompts.js';
 import firebase from './firebaseApp.js';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faRedoAlt } from '@fortawesome/free-solid-svg-icons'
 import swal from 'sweetalert';
 import './App.css';
+
 
 
 // Main functionality of application is in here
@@ -32,6 +35,7 @@ class App extends Component {
 
     // Setting the reference to the section of the page that should be scrolled to on click of "post" button
     this.scrollSection = React.createRef();
+    this.scrollTop = React.createRef();
   }
 
 
@@ -92,7 +96,6 @@ class App extends Component {
     });
   }
 
-
   // Handle the click of the first button on the page, "generate a quote"
   handleStart = () => {
     // Call random number
@@ -109,6 +112,19 @@ class App extends Component {
   // Function to scroll to section of the page that displays "posts"
   scrollToMyRef = () => {
     window.scrollTo(0, this.scrollSection.current.offsetTop)
+  }
+
+  // Function to scroll to top of the page on refresh
+  scrollToTop = () => {
+    window.scrollTo(0, this.scrollTop.current.offsetTop)
+  }
+
+
+  handleRefresh = (e) => {
+    e.preventDefault();
+    console.log("refresh")
+
+    this.scrollToTop();
   }
 
 
@@ -129,8 +145,8 @@ class App extends Component {
       }
 
       // Push posts object to database
-      // Key - will be uniquely created by firebase in componentDidMount
-      // Name - will contain the object of posts (containing quote and input keys)
+        // Key - will be uniquely created by firebase in componentDidMount
+        // Name - will contain the object of posts (containing quote and input keys)
       dbRef.push(posts);
 
       // Reset the state
@@ -153,12 +169,15 @@ class App extends Component {
   }
 
 
+
   render() {
     return (
       <div className="App">
-        <header>
+        <header ref={this.scrollTop}>
           <div className="wrapper">
             <h1>Deeper</h1>
+            <div>
+            </div>
             <div className="journalEntry">
               <div className="generatedQuote">
                 <h2 className="quote">{prompts[this.state.number].quote}</h2>
@@ -196,6 +215,9 @@ class App extends Component {
             data={this.state.data}
             currentQuote={this.state.currentQuote}
           />
+          <button className="refresh" onClick={this.handleRefresh}>
+            <FontAwesomeIcon icon={faRedoAlt} />
+          </button>
         </ul>
       </div>
     );
