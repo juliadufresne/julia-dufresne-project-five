@@ -217,7 +217,7 @@ class App extends Component {
           />
           <button className="refresh" onClick={this.handleRefresh}>
             <FontAwesomeIcon icon={faRedoAlt} />
-          </button>
+          </button> 
         </ul>
       </div>
     );
