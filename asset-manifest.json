@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/julia-dufresne-project-five/static/css/main.944613e6.chunk.css",
-    "main.js": "/julia-dufresne-project-five/static/js/main.df933861.chunk.js",
-    "main.js.map": "/julia-dufresne-project-five/static/js/main.df933861.chunk.js.map",
-    "runtime-main.js": "/julia-dufresne-project-five/static/js/runtime-main.5b1b38f3.js",
-    "runtime-main.js.map": "/julia-dufresne-project-five/static/js/runtime-main.5b1b38f3.js.map",
-    "static/js/2.64a4c2d1.chunk.js": "/julia-dufresne-project-five/static/js/2.64a4c2d1.chunk.js",
-    "static/js/2.64a4c2d1.chunk.js.map": "/julia-dufresne-project-five/static/js/2.64a4c2d1.chunk.js.map",
-    "index.html": "/julia-dufresne-project-five/index.html",
-    "precache-manifest.00962e3477109532d055d7ddfddbc67f.js": "/julia-dufresne-project-five/precache-manifest.00962e3477109532d055d7ddfddbc67f.js",
-    "service-worker.js": "/julia-dufresne-project-five/service-worker.js",
-    "static/css/main.944613e6.chunk.css.map": "/julia-dufresne-project-five/static/css/main.944613e6.chunk.css.map",
-    "static/js/2.64a4c2d1.chunk.js.LICENSE.txt": "/julia-dufresne-project-five/static/js/2.64a4c2d1.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/julia-dufresne-project-five/static/media/pawel-czerwinski-hNrd99q5peI-unsplash.81e92c88.jpg"
+    "main.css": "/deeper/static/css/main.85f4681e.chunk.css",
+    "main.js": "/deeper/static/js/main.bb3917af.chunk.js",
+    "main.js.map": "/deeper/static/js/main.bb3917af.chunk.js.map",
+    "runtime-main.js": "/deeper/static/js/runtime-main.14ee7231.js",
+    "runtime-main.js.map": "/deeper/static/js/runtime-main.14ee7231.js.map",
+    "static/js/2.0207e609.chunk.js": "/deeper/static/js/2.0207e609.chunk.js",
+    "static/js/2.0207e609.chunk.js.map": "/deeper/static/js/2.0207e609.chunk.js.map",
+    "index.html": "/deeper/index.html",
+    "precache-manifest.3c9b58c20b93045705630773f93b2167.js": "/deeper/precache-manifest.3c9b58c20b93045705630773f93b2167.js",
+    "service-worker.js": "/deeper/service-worker.js",
+    "static/css/main.85f4681e.chunk.css.map": "/deeper/static/css/main.85f4681e.chunk.css.map",
+    "static/js/2.0207e609.chunk.js.LICENSE.txt": "/deeper/static/js/2.0207e609.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/deeper/static/media/pawel-czerwinski-hNrd99q5peI-unsplash.81e92c88.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.5b1b38f3.js",
-    "static/js/2.64a4c2d1.chunk.js",
-    "static/css/main.944613e6.chunk.css",
-    "static/js/main.df933861.chunk.js"
+    "static/js/runtime-main.14ee7231.js",
+    "static/js/2.0207e609.chunk.js",
+    "static/css/main.85f4681e.chunk.css",
+    "static/js/main.bb3917af.chunk.js"
   ]
 }
