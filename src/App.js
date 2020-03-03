@@ -32,7 +32,6 @@ class App extends Component {
       // Used to print to other section of the page
       currentQuote: "",
     }
-
     // Setting the reference to the section of the page that should be scrolled to on click of "post" button
     this.scrollSection = React.createRef();
     this.scrollTop = React.createRef();
@@ -122,7 +121,6 @@ class App extends Component {
 
   handleRefresh = (e) => {
     e.preventDefault();
-    console.log("refresh")
 
     this.scrollToTop();
   }
