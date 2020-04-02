@@ -2,7 +2,7 @@
 
 Use this stoicism quote generator to reflect and journal on some of the deepest thoughts in history.
 
-React | Firebase | HTML | SCSS
+React | Firebase | SCSS
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
