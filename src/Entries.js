@@ -12,7 +12,6 @@ class Entries extends Component {
 
     // Function to remove posts from Firebase
     removePost = (entry) => {
-        // console.log(entry)
         const dbRef = firebase.database().ref();
         dbRef.child(entry).remove();
     }
@@ -22,8 +21,6 @@ class Entries extends Component {
         return (
             <div>
                 {this.props.data.map((entry) => {
-                    // console.log(entry)
-                    // console.log(this.props.data)
 
                     return (
                         <ul key={entry.key} className="userPost">
